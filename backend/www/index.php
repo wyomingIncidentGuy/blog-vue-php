@@ -7,6 +7,7 @@
     ini_set('allow_url_fopen', '1');
 
     $link = mysqli_connect('db', 'root', 'root_password', 'my_database', '3306');
-    $result = mysqli_query($link, 'SELECT * FROM test_table WHERE id=1');
+    $result = mysqli_fetch_assoc(mysqli_query($link, 'SELECT * FROM test_table WHERE id=1'));
+    header('');
     echo json_encode($result);
     mysqli_close($link);
