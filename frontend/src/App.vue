@@ -16,7 +16,7 @@ export default {
 
   methods: {
     fetchData: function(){
-      let data = fetch('http://localhost:8080/api.php');
+      let data = fetch('http://localhost:8080/posts');
       data.then(
         response => {
           return response.text();
