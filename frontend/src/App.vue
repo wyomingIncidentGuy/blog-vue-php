@@ -17,7 +17,7 @@ export default {
   methods: {
     fetchData: function(){
       let data = fetch('http://localhost:8080/posts',{
-        method:'PUT'
+        method:'GET'
       });
       data.then(
         response => {
