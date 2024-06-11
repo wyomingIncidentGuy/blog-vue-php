@@ -12,7 +12,7 @@ export default {
   data(){
     return{
       resp: '',
-      text:'text'
+      text:'tex'
     }
   },
 
