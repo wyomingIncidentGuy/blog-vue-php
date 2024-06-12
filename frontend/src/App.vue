@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <p>{{ resp }}</p>
-    <p>{{text}}</p>
     <button @click = "fetchData">data</button>
   </div>
 </template>
@@ -12,7 +11,6 @@ export default {
   data(){
     return{
       resp: '',
-      text:'text2'
     }
   },
 
