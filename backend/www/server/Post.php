@@ -12,8 +12,8 @@
         }
 
         public function addNewPost($id, $heading, $theme, $date, $body){
-            $stmt = mysqli_prepare($this->link,"INSERT INTO Posts (ID, heading, theme, postDate, body) VALUES (?,?,?,?,?)");
-            $stmt->bind_param('sssss',$id, $heading, $theme, $date, $body);
+            $stmt = mysqli_prepare($this->link,"INSERT INTO Posts (ID, heading, theme, date, body) VALUES (?,?,?,?,?)");
+            $stmt->bind_param('sssss', $id, $heading, $theme, $date, $body);
             return $stmt->execute();
         }
 
